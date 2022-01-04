@@ -5,7 +5,7 @@ import './App.css';
 import SectionOne from './Components/SectionOne'
 
 function App() {
-  console.log('jhfds');
+  // console.log('jhfds');
   // const myArr = [
   //   { name: "sankalp", city: "nagpur" }
   // ];
