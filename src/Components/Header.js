@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Row, Col, Input } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
 
@@ -88,6 +89,7 @@ export default function Header(props) {
         <div className='container'>
             <h1>{ props.heading }</h1>
             <Row>
+                <Link to="card">Card</Link>
                 <Col></Col>
                 <Col>
                     <Input 
