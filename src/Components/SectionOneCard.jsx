@@ -3,6 +3,8 @@ import React from 'react'
 export default function SectionOneCard(props) {
 
     const { data:{ title, description } } = props;
+
+    console.log(';fdsakl');
     
     const cardStyle = {backgroundColor: "red", color: "white"};
 
