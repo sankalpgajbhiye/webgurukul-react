@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Header';
-// import { Section, Footer } from './Components/Footer';
+import { Section, Footer } from './Components/Footer';
 
 import SectionOne from './Components/SectionOne';
 // import SectionThree from './Components/SectionThree';
@@ -28,10 +28,11 @@ function App() {
       </div>
       <p>React Router Dom (V6)</p>
       
-      <BrowserRouter>
+      <BrowserRouter> 
         <Routes>
           <Route path="/" element={<Header />} />
           <Route path="/card" element={<SectionOne />} />
+          <Route path="/footer/:id/:page" element={<Footer />} />
 
           {/* <Route path="/" element={<App />}>
             <Route index element={<Home />} />

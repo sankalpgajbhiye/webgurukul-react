@@ -14,7 +14,15 @@ export default function SectionOne() {
 
     return (
         <>
-            <Link to="/">Calculator</Link>
+            <Link to="/">Calculator</Link> { ` ` }
+
+            <Link to="/footer/445/one">Footer</Link>{ ` ` }
+            <Link to="/footer/446/two">Footer</Link>{ ` ` }
+            <Link to="/footer/447/three">Footer</Link>{ ` ` }
+            <Link to="/footer/448/four">Footer</Link>{ ` ` }
+
+            <Link to={`/footer/448/four`}>Footerdd</Link>{ ` ` }
+
             <div className="container px-4 py-5" id="featured-3">
                 <h2 className="pb-2 border-bottom">Columns with icons</h2>
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">

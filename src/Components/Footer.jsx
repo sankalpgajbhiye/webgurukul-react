@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useParams, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+    let params = useParams();
+    let navigate = useNavigate();
+
+    const handleBack = () => {
+        // code here
+        navigate(`/card`);
+    }
+
     return (
         <div>
-            <h5>This is from footer.</h5>
+            <h5>This is from footer. {params.id} {params.page} </h5>
+            <button onClick={handleBack} >Back</button>
         </div>
     )
 }
