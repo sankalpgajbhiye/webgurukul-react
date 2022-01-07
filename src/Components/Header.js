@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Row, Col, Input } from 'reactstrap';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 export default function Header(props) {
 
@@ -85,6 +86,24 @@ export default function Header(props) {
         setInputValues(inputObj);
     }
 
+    const handleAdd = async () => {
+        try {
+
+            const sendData = {
+                "title" : "ldskfjalkldfjasl",
+                "body"  : "barfdsa",
+                "userId": 1
+            };
+
+            const result = await axios.post('https://jsonplaceholder.typicode.com/posts', sendData);
+            const { data, status } = result;
+            console.log(data);
+            console.log(status);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <div className='container'>
             <h1>{ props.heading }</h1>
@@ -158,6 +177,18 @@ export default function Header(props) {
                     />
                 </Col>
                 <Col></Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Button 
+                        className='mx-1' 
+                        size='sm' 
+                        color='danger'
+                        onClick={handleAdd}
+                        >
+                            Add Call Api
+                    </Button>   
+                </Col>
             </Row>
         </div>
     )

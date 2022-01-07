@@ -2,9 +2,7 @@ import React from 'react'
 
 export default function SectionOneCard(props) {
 
-    const { data:{ title, description } } = props;
-
-    console.log(';fdsakl');
+    const { data:{ title, body } } = props;
     
     const cardStyle = {backgroundColor: "red", color: "white"};
 
@@ -14,7 +12,7 @@ export default function SectionOneCard(props) {
                 <svg className="bi" width="1em" height="1em"><use xlinkHref="#collection" /></svg>
             </div>
             <h2>{ title } </h2>
-            <p>{ description }</p>
+            <p>{ body }</p>
             <a href="#" className="icon-link">
                 Call to action
                 <svg className="bi" width="1em" height="1em"><use xlinkHref="#chevron-right" /></svg>

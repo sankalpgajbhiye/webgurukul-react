@@ -6,54 +6,54 @@ import SectionOne from './Components/SectionOne';
 // import SectionThree from './Components/SectionThree';
 
 import {
-  BrowserRouter,
-  Routes,
-  Route
+	BrowserRouter,
+	Routes,
+	Route
 } from "react-router-dom";
 
 function App() {
-  // console.log('jhfds');
-  // const myArr = [
-  //   { name: "sankalp", city: "nagpur" }
-  // ];
+	// console.log('jhfds');
+	// const myArr = [
+	//   { name: "sankalp", city: "nagpur" }
+	// ];
 
-  // const myObj = { 
-  //   name: "akansha", city: "nagpur"
-  // };
+	// const myObj = { 
+	//   name: "akansha", city: "nagpur"
+	// };
 
-  return (
-    <div className='App'>
-      <div>
-        
-      </div>
-      <p>React Router Dom (V6)</p>
-      
-      <BrowserRouter> 
-        <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/card" element={<SectionOne />} />
-          <Route path="/footer/:id/:page" element={<Footer />} />
+	return (
+		<div className='App'>
+			<div>
 
-          {/* <Route path="/" element={<App />}>
+			</div>
+			<p>React Router Dom (V6)</p>
+
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Header />} />
+					<Route path="/card" element={<SectionOne />} />
+					<Route path="/footer/:id/:page" element={<Footer />} />
+
+					{/* <Route path="/" element={<App />}>
             <Route index element={<Home />} />
             
           </Route> */}
-        </Routes>
-      </BrowserRouter>
+				</Routes>
+			</BrowserRouter>
 
 
-      {/* <Header 
+			{/* <Header 
           heading="calculator one"
           address={myArr}
           myObj={myObj}
         /> */}
-      {/* <Footer />
+			{/* <Footer />
         <Section /> */}
 
-      {/* <SectionOne />
+			{/* <SectionOne />
         <SectionThree /> */}
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
